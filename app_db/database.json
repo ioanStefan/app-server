@@ -1,0 +1,16 @@
+{
+    "users": [{
+        "username": "adrian.stefan",
+        "password": "$2a$10$9E6vdLs.a34Z8pOJ/tC3V.F/8TprCEcnBDY89DrlAjMJ1Mgl7dnUa",
+        "firstName": "Adrian",
+        "lastName": "Stefan",
+        "email": "ioanadrian.stefan@gmail.com"
+    }, {
+        "username": "admin",
+        "password": "$2a$10$bFhdkYVKfSNnj.Co8UMXLOOu1gWs89DyMl7QOboPTB5gsS/WK9LAi",
+        "firstName": "Administrator",
+        "lastName": "System",
+        "email": "admin@gmail.com"
+    }],
+    "projects": []
+}
