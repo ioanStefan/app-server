@@ -87,11 +87,22 @@ module.exports = {
      */
     profile(req, res) {
         let user = req.user;
-
         if (user) {
-
+            let _user = userModel.findUser(user.username);
+            return res.json({
+                success: true,
+                profile: {
+                    firstName: _user.firstName,
+                    lastName: _user.lastName,
+                    email: _user.email,
+                    username: _user.username
+                }
+            })
         } else {
-
+            return res.json({
+                success: false,
+                msg: "You don't have access!"
+            })
         }
     }
 }
