@@ -14,7 +14,7 @@ module.exports = {
         let {
             username,
             password
-        } = req.body.user;
+        } = req.body;
 
         //  Get user from db
         let user = userModel.findUser(username);
@@ -46,7 +46,7 @@ module.exports = {
                 } else {
                     // Password incorrect
                     return res.json({
-                        success: 'false',
+                        success: false,
                         msg: 'Username or password incorrect!'
                     })
                 }
@@ -54,7 +54,7 @@ module.exports = {
         } else {
             // Username incorrect
             return res.json({
-                success: 'false',
+                success: false,
                 msg: 'Username or password incorrect!'
             })
         }
@@ -86,6 +86,12 @@ module.exports = {
      * @param {Response} res 
      */
     profile(req, res) {
+        let user = req.user;
 
+        if (user) {
+
+        } else {
+
+        }
     }
 }

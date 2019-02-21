@@ -4,7 +4,7 @@ var router = express.Router();
 var usersController = require('../controllers/users');
 
 /* User login. */
-router.get('/login', usersController.authenticate);
+router.post('/login', usersController.authenticate);
 
 /* Register new user. */
 router.post('/register', usersController.register);
