@@ -1,7 +1,7 @@
 # app-server
 A simple API that demonstrate how endpoints can be created in NodeJS.
 
-API will respont at to type of users:  reqular user and admin user.
+API will respond at to type of users:  reqular user and admin user.
 
 # What a regular user can do:
 
