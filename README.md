@@ -20,6 +20,7 @@ API will respond at to type of users:  reqular user and admin user.
     
 ·  see all the projects available inside the platform, without registration
 
+# Structure
 As a design pattern the MVC format was applied. For each route a controller file and a model file was created.
 For the client application was used VueJS framework and the application can be found here: https://github.com/ioanStefan/app-client .
 Applying this desing keeps the code structured and well organised .
@@ -30,3 +31,7 @@ registered users and created projects are stored. With JSON format is pretty eas
 For access limitation a helper was created, auth.js, in helpers directory wich limit the access on application based on the requirements.
 
 As Login verification was choose Passport.js with JWT technology. Easy to use and fast implementation. Generated token is stored on the client side in localStorage. At logout data stored in localStorage is deleted.
+
+Default user:
+- username *admin*
+- password *system*
